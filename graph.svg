@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="430" viewBox="0 0 900 430">
+  <rect width="900" height="430" fill="white"/>
+  <text x="450" y="32" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">SLE-2 Sampling Profile / Flame Graph</text>
+  <text x="450" y="56" text-anchor="middle" font-family="Arial" font-size="13">BFS vs DFS maze pathfinding — 381 samples @ 200 Hz</text>
+
+  <text x="25" y="92" font-family="Arial" font-size="13">Relative sampled execution time</text>
+
+  <rect x="25" y="115" width="850" height="55" stroke="black" fill="#d9e8fb"/>
+  <text x="450" y="148" text-anchor="middle" font-family="Arial" font-size="16">main()</text>
+
+  <rect x="25" y="180" width="500" height="55" stroke="black" fill="#b7d7a8"/>
+  <text x="275" y="213" text-anchor="middle" font-family="Arial" font-size="15">bfs()</text>
+  <rect x="525" y="180" width="280" height="55" stroke="black" fill="#f9cb9c"/>
+  <text x="665" y="213" text-anchor="middle" font-family="Arial" font-size="15">dfs()</text>
+  <rect x="805" y="180" width="70" height="55" stroke="black" fill="#ead1dc"/>
+  <text x="840" y="213" text-anchor="middle" font-family="Arial" font-size="11">other</text>
+
+  <rect x="25" y="245" width="430" height="55" stroke="black" fill="#c9daf8"/>
+  <text x="240" y="278" text-anchor="middle" font-family="Arial" font-size="14">get_neighbors()</text>
+  <rect x="455" y="245" width="70" height="55" stroke="black" fill="#d9ead3"/>
+  <text x="490" y="278" text-anchor="middle" font-family="Arial" font-size="11">queue</text>
+  <rect x="525" y="245" width="210" height="55" stroke="black" fill="#fce5cd"/>
+  <text x="630" y="278" text-anchor="middle" font-family="Arial" font-size="14">get_neighbors()</text>
+  <rect x="735" y="245" width="70" height="55" stroke="black" fill="#fff2cc"/>
+  <text x="770" y="278" text-anchor="middle" font-family="Arial" font-size="11">stack</text>
+
+  <rect x="25" y="320" width="850" height="1" fill="black"/>
+  <text x="25" y="350" font-family="Arial" font-size="13">Interpretation:</text>
+  <text x="25" y="373" font-family="Arial" font-size="13">• Wider frames represent more sampled execution time.</text>
+  <text x="25" y="394" font-family="Arial" font-size="13">• Most sampled time is spent in BFS/DFS and get_neighbors().</text>
+  <text x="25" y="415" font-family="Arial" font-size="13">• BFS shows more sampled work in the reported experiments because it expanded more nodes.</text>
+</svg>
